@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.stormdzh.lame4android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name="com.stormdzh.lamedemo.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.stormdzh.lamedemo.SelectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.stormdzh.lamedemo.MainActivity"
+            android:label="@string/record_mp3">
+
+        </activity>
+        <activity
+            android:name="com.stormdzh.lamedemo.LameActivity"
+            android:label="@string/convert_mp3">
+
+        </activity>
+
+        <!--<activity android:name="com.stormdzh.lamedemo.SchemeFilterActivity">-->
+
+        <!--&lt;!&ndash; Schame &ndash;&gt;-->
+        <!--<intent-filter>-->
+        <!--<data-->
+        <!--android:host="m.aliyun.com"-->
+        <!--android:scheme="arouter"/>-->
+
+        <!--<action android:name="android.intent.action.VIEW"/>-->
+
+        <!--<category android:name="android.intent.category.DEFAULT"/>-->
+        <!--<category android:name="android.intent.category.BROWSABLE"/>-->
+        <!--</intent-filter>-->
+
+        <!--&lt;!&ndash; App Links &ndash;&gt;-->
+        <!--<intent-filter android:autoVerify="true">-->
+        <!--<action android:name="android.intent.action.VIEW"/>-->
+
+        <!--<category android:name="android.intent.category.DEFAULT"/>-->
+        <!--<category android:name="android.intent.category.BROWSABLE"/>-->
+
+        <!--<data-->
+        <!--android:host="m.aliyun.com"-->
+        <!--android:scheme="http"/>-->
+        <!--<data-->
+        <!--android:host="m.aliyun.com"-->
+        <!--android:scheme="https"/>-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+    </application>
+
+</manifest>
